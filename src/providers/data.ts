@@ -7,6 +7,7 @@ import { Observable } from 'rxjs/Observable';
 export class Data {
 
     data: any;
+    private url: string = 'assets/data/questions.json';
 
     constructor(public http: HttpClient) {
 
@@ -17,7 +18,7 @@ export class Data {
         // if(this.data){
         //     return Observable.of([]);
         // }
-      return this.http.get('assets/data/questions.json/questions');
+      return this.http.get(this.url);
 
     }
 

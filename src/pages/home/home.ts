@@ -25,8 +25,7 @@ export class HomePage {
       this.slides.lockSwipes(true);
 
       this.dataService.load().subscribe((data) => {
-        console.log(data);
-        // this.questions = data;
+        this.questions = data['questions'];
       });
 
   }
@@ -52,7 +51,7 @@ export class HomePage {
           this.nextSlide();
           answer.selected = false;
           question.flashCardFlipped = false;
-      }, 3000);
+      }, 500);
   }
 
   randomizeAnswers(rawAnswers: any[]): any[] {

@@ -2,38 +2,246 @@
   "questions": [
 
       {
-          "flashCardFront": "<img src='assets/images/helicopter.png' />",
+          "flashCardFront": "01",
           "flashCardBack": "Helicopter",
           "flashCardFlipped": false,
-          "questionText": "What is this?",
+          "questionText": "Na escola, você prefere/preferia assuntos ligados a:",
           "answers": [
-              {"answer": "Helicopter", "correct": true, "selected": false},
-              {"answer": "Plane", "correct": false, "selected": false},
-              {"answer": "Truck", "correct": false, "selected": false}
+              {"answer": "Arte, esportes e atividades extracurriculares", "correct": true, "selected": false},
+              {"answer": "Biologia e genética", "correct": false, "selected": false},
+              {"answer": "Ciências humanas, idiomas", "correct": false, "selected": false},
+              {"answer": "Ciências exatas", "correct": false, "selected": false}
           ]
       },
       {
-          "flashCardFront": "<img src='assets/images/plane.png' />",
+          "flashCardFront": "02",
           "flashCardBack": "Plane",
           "flashCardFlipped": false,
-          "questionText": "What is this?",
+          "questionText": "Você prefere levar sua Vida:",
           "answers": [
-              {"answer": "Helicopter", "correct": false, "selected": false},
-              {"answer": "Plane", "correct": true, "selected": false},
-              {"answer": "Truck", "correct": false, "selected": false}
+              {"answer": "Com pouca rotina e muitas regras", "correct": false, "selected": false},
+              {"answer": "Com regras definidas e disciplina", "correct": true, "selected": false},
+              {"answer": "Interagindo com todo tipo de pessoa", "correct": false, "selected": false},
+              {"answer": "Com muita autonomia: `na sua`", "correct": false, "selected": false}
           ]
       },
       {
-          "flashCardFront": "<img src='assets/images/truck.png' />",
+          "flashCardFront": "03",
           "flashCardBack": "Truck",
           "flashCardFlipped": false,
-          "questionText": "What is this?",
+          "questionText": "Você se descreveria como uma pessoa:",
           "answers": [
-              {"answer": "Helicopter", "correct": false, "selected": false},
-              {"answer": "Plane", "correct": false, "selected": false},
-              {"answer": "Truck", "correct": true, "selected": false}
+              {"answer": "Impulsiva e um tanto aventureira", "correct": false, "selected": false},
+              {"answer": "Cautelosa e responsável", "correct": false, "selected": false},
+              {"answer": "Entusiasmada e muito amiga", "correct": true, "selected": false},
+              {"answer": "Calma e diferente da maioria", "correct": true, "selected": false}
           ]
-      }
+      },
+      {
+        "flashCardFront": "04",
+        "flashCardBack": "Truck",
+        "flashCardFlipped": false,
+        "questionText": "Você se considera uma pessoa:",
+        "answers": [
+            {"answer": "prática e hábil para improvisar:", "correct": false, "selected": false},
+            {"answer": "batalhadora, que sabe o que quer", "correct": false, "selected": false},
+            {"answer": "preocupada com questões humanas", "correct": true, "selected": false},
+            {"answer": "capacitada para criar e inventar", "correct": true, "selected": false}
+        ]
+    },
+    {
+      "flashCardFront": "05",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "De quais caracteristicas suas você sente orgulho",
+      "answers": [
+          {"answer": "audácia e facilidade para lidar com o inesperado:", "correct": false, "selected": false},
+          {"answer": "senso de dever e capacidade de dar exemplo", "correct": false, "selected": false},
+          {"answer": "idealismo e disposição para compreender os outros", "correct": true, "selected": false},
+          {"answer": "engenhosidade e papidez mental", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "06",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Costuma confiar mais em",
+      "answers": [
+          {"answer": "percepção imediata", "correct": false, "selected": false},
+          {"answer": "costumes e tradições", "correct": false, "selected": false},
+          {"answer": "intuição", "correct": true, "selected": false},
+          {"answer": "razão e lógica", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "07",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Quase sempre você gosta de",
+      "answers": [
+          {"answer": "causar impacto: os `holofotes` o atraem", "correct": false, "selected": false},
+          {"answer": "ser visto como membro valioso de um grupo", "correct": false, "selected": false},
+          {"answer": "sonhar em transformar o mundo", "correct": true, "selected": false},
+          {"answer": "desvendar um enigma ou inventar algo útil", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "08",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "A vida é mais interessante quando você tem",
+      "answers": [
+          {"answer": "desafios, situações cambiantes", "correct": false, "selected": false},
+          {"answer": "segurança, emprego garantido, integração social", "correct": false, "selected": false},
+          {"answer": "possibilidade de fazer algo para mudar o mundo", "correct": true, "selected": false},
+          {"answer": "possibilidade de ir além do que já é conhecido", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "09",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Você gostaria de ser",
+      "answers": [
+          {"answer": "um craque na profissão que escolher", "correct": false, "selected": false},
+          {"answer": "um executivo bem-sucedido", "correct": false, "selected": false},
+          {"answer": "um profissional de prestigio", "correct": true, "selected": false},
+          {"answer": "um especialista ou cientista", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "10",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Você é muito bom(boa) lidando com",
+      "answers": [
+          {"answer": "ferramentas, instrumentos e equipamentos", "correct": false, "selected": false},
+          {"answer": "controle de tempo, comando e execução", "correct": false, "selected": false},
+          {"answer": "pessoas de todos os níveis culturais e sociais", "correct": true, "selected": false},
+          {"answer": "sistemas e construção(material ou mental)", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "11",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Antes de agir, você analisa",
+      "answers": [
+          {"answer": "as vantagens imediatas", "correct": false, "selected": false},
+          {"answer": "as experiencias já vividas", "correct": false, "selected": false},
+          {"answer": "as possibilidades futuras", "correct": true, "selected": false},
+          {"answer": "as condições e consequencias", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "12",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Gosta quando as pessoas",
+      "answers": [
+          {"answer": "o surpreendem com um presente", "correct": false, "selected": false},
+          {"answer": "expressam gratidão por algo que fez", "correct": false, "selected": false},
+          {"answer": "reconhecem sua personalidade singular", "correct": true, "selected": false},
+          {"answer": "reconhecem sua inteligencia", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "13",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Você costuma abraçar um novo projeto",
+      "answers": [
+          {"answer": "com a cara e coragem", "correct": false, "selected": false},
+          {"answer": "guiada pela experiencia", "correct": false, "selected": false},
+          {"answer": "confiando na intuição e na criatividade", "correct": true, "selected": false},
+          {"answer": "depois de verificar todas as variaveis", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "14",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Geralmente, você prefere agir",
+      "answers": [
+          {"answer": "no calor do momento", "correct": false, "selected": false},
+          {"answer": "com segurança e conforme o costume", "correct": false, "selected": false},
+          {"answer": "quando está inspirando", "correct": true, "selected": false},
+          {"answer": "quando um problema o desafia", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "15",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Você fica motivado(a) quando",
+      "answers": [
+          {"answer": "tem a oportunidade de superar obstáculos", "correct": false, "selected": false},
+          {"answer": "experimenta estabilidade na vida profissional.", "correct": false, "selected": false},
+          {"answer": "harmonia e inspiração guiam a atividade", "correct": true, "selected": false},
+          {"answer": "há liberdade para projetar o futuro", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "16",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Em atividade de grupo, você prefere",
+      "answers": [
+          {"answer": "as desafiadoras, que exigem ação rápida", "correct": false, "selected": false},
+          {"answer": "administrar os recursos disponiveis", "correct": false, "selected": false},
+          {"answer": "motivar as pessoas para darem o melhor de si", "correct": true, "selected": false},
+          {"answer": "descartar logo o que não funciona", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "17",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Liderar é uma atividade que gosta de exercer",
+      "answers": [
+          {"answer": "por pouco tempo e dependendo da situação", "correct": false, "selected": false},
+          {"answer": "quando pode comandar do começo ao fim", "correct": false, "selected": false},
+          {"answer": "quando é preciso identificar e reunir talentos", "correct": true, "selected": false},
+          {"answer": "quando o raciocínio estratégico é necessário", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "18",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Em uma escola você gostaria de ser",
+      "answers": [
+          {"answer": "professor de educação física", "correct": false, "selected": false},
+          {"answer": "diretor", "correct": false, "selected": false},
+          {"answer": "professor de literatura", "correct": true, "selected": false},
+          {"answer": "professor de matemática ou física", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "19",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "É um elogio quando se refere a você como",
+      "answers": [
+          {"answer": "corajoso, otimista e divertido", "correct": false, "selected": false},
+          {"answer": "cauteloso, responsével e aplicado", "correct": false, "selected": false},
+          {"answer": "harmonizador, integro e sábio", "correct": true, "selected": false},
+          {"answer": "uma mente brilhante", "correct": true, "selected": false}
+      ]
+    },
+    {
+      "flashCardFront": "20",
+      "flashCardBack": "Truck",
+      "flashCardFlipped": false,
+      "questionText": "Frases quem têm a ver com você",
+      "answers": [
+          {"answer": "Deixo a vida me levar...", "correct": false, "selected": false},
+          {"answer": "Manda quem pode;obedece quem tem juizo", "correct": false, "selected": false},
+          {"answer": "Para seu próprio interesse, seja verdadeiro", "correct": true, "selected": false},
+          {"answer": "Penso, logo existo", "correct": true, "selected": false}
+      ]
+    }
+
 
   ]
 }
