@@ -2,14 +2,33 @@
 
   page-home {
 
+      .question-number {
+        padding-bottom: 24px;
+        padding-top: 16px;
+        font-family: 'Merriweather Sans', sans-serif;
+      }
+
+      .question {
+        padding-bottom: 64px;
+        font-family: 'Merriweather Sans', sans-serif;
+      }
+
       ion-slide {
           align-items: flex-start;
       }
 
+      ion-list {
+        padding: 0 16px;
+      }
+
       ion-item {
           margin-bottom: 5px;
-          font-size: 1.2em;
-          background-color: map-get($colors, primary);
+          font-size: 1;
+          background-color: transparent;
+          border-radius: 3em;
+          border: 1px solid black !important;
+          padding: 8px 26px;
+          margin-bottom: 16px;
       }
 
       flash-card {
@@ -29,6 +48,11 @@
               font-size: 1.3em;
               font-weight: bold;
           }
+      }
+
+      .questions {
+        justify-content: center;
+        align-items: center;
       }
 
   }

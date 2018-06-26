@@ -14,6 +14,9 @@ import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { Data } from '../providers/data';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ChartsModule } from 'ng2-charts';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

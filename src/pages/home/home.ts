@@ -10,10 +10,16 @@ export class HomePage {
 
   @ViewChild('slides') slides: any;
 
+  // Doughnut
+  public doughnutChartLabels:string[] = ['A', 'B', 'C', 'D'];
+  public doughnutChartData:number[] = [5, 5, 5, 5];
+  public doughnutChartType:string = 'doughnut';
+
   hasAnswered: boolean = false;
   score: number = 0;
   optionScore  = [0, 0, 0, 0];
   moreOption: string;
+  numberQuestions: number;
 
   slideOptions: any;
   questions: any;
@@ -30,6 +36,7 @@ export class HomePage {
 
       this.dataService.load().subscribe((data) => {
         this.questions = data['questions'];
+        this.numberQuestions = this.questions.length;
       });
 
   }
@@ -43,18 +50,18 @@ export class HomePage {
   selectAnswer(answer, question, option){
       switch(option) {
           case "a":
-            this.optionScore[0]++ 
+            this.optionScore[0]++
               break;
           case "b":
-            this.optionScore[1]++ 
+            this.optionScore[1]++
               break;
           case "c":
-            this.optionScore[2]++ 
+            this.optionScore[2]++
               break;
           default:
-            this.optionScore[3]++ 
+            this.optionScore[3]++
       }
-      console.log(this.optionScore);      
+      console.log(this.optionScore);
       this.hasAnswered = true;
       answer.selected = true;
       question.flashCardFlipped = true;
@@ -62,7 +69,7 @@ export class HomePage {
       if(answer.correct){
           this.score++;
       }
-      
+
       var maior = 0;
       for (var i = 0; i < this.optionScore.length; i++) {
          if ( this.optionScore[i] > maior ) {
@@ -70,7 +77,6 @@ export class HomePage {
             this.moreOption = this.options[i];
          }
       }
-
       setTimeout(() => {
           this.hasAnswered = false;
           this.nextSlide();
@@ -99,6 +105,15 @@ export class HomePage {
       this.slides.lockSwipes(false);
       this.slides.slideTo(1, 1000);
       this.slides.lockSwipes(true);
+  }
+
+  // events
+  public chartClicked(e:any):void {
+    console.log(e);
+  }
+
+  public chartHovered(e:any):void {
+    console.log(e);
   }
 
 }
