@@ -12,9 +12,13 @@ export class HomePage {
 
   hasAnswered: boolean = false;
   score: number = 0;
+  optionScore  = [0, 0, 0, 0];
+  moreOption: string;
 
   slideOptions: any;
   questions: any;
+
+  options = ['a', 'b', 'c', 'd'];
 
   constructor(public navCtrl: NavController, public dataService: Data) {
 
@@ -36,14 +40,35 @@ export class HomePage {
       this.slides.lockSwipes(true);
   }
 
-  selectAnswer(answer, question){
-
+  selectAnswer(answer, question, option){
+      switch(option) {
+          case "a":
+            this.optionScore[0]++ 
+              break;
+          case "b":
+            this.optionScore[1]++ 
+              break;
+          case "c":
+            this.optionScore[2]++ 
+              break;
+          default:
+            this.optionScore[3]++ 
+      }
+      console.log(this.optionScore);      
       this.hasAnswered = true;
       answer.selected = true;
       question.flashCardFlipped = true;
 
       if(answer.correct){
           this.score++;
+      }
+      
+      var maior = 0;
+      for (var i = 0; i < this.optionScore.length; i++) {
+         if ( this.optionScore[i] > maior ) {
+            maior = this.optionScore[i];
+            this.moreOption = this.options[i];
+         }
       }
 
       setTimeout(() => {
@@ -69,6 +94,8 @@ export class HomePage {
 
   restartQuiz() {
       this.score = 0;
+      this.moreOption = undefined;
+      this.optionScore = [0, 0, 0, 0];
       this.slides.lockSwipes(false);
       this.slides.slideTo(1, 1000);
       this.slides.lockSwipes(true);

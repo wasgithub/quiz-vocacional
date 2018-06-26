@@ -21,8 +21,8 @@
 
               <ion-item *ngFor="let answer of question.answers; let i = index;">
 
-                  <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
-                  <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+                  <ion-label>{{options[i]}}. {{answer.answer}}</ion-label>
+                  <ion-radio (click)="selectAnswer(answer, question, options[i])" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
 
               </ion-item>
 
@@ -31,7 +31,7 @@
       </ion-slide>
 
       <ion-slide>
-          <h2>Final Score: {{score}}</h2>
+          <h2>Final Score: {{moreOption}}</h2>
 
           <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>
 
